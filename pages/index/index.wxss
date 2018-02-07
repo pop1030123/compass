@@ -1,0 +1,44 @@
+/**index.wxss**/
+
+.contact_button {
+position: fixed;
+bottom: 0;
+width: 100%;
+text-align: center;
+background-color: #1AAD19;
+color: white;
+font-size: 38rpx;
+border: none;
+border-radius: 0rpx;
+}
+
+.navigator {
+padding: 5rpx;
+margin: 5rpx;
+  position: relative;
+  display: flex;
+}
+
+.index_item{
+text-align: left;
+width: 100%;
+}
+
+.navigator-arrow {
+  padding-right: 0rpx;
+  position: relative;
+}
+.navigator-arrow:after {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 2rpx 2rpx 0 0;
+  border-color: #888888;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -8rpx;
+  right: 28rpx;
+}

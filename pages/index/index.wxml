@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view wx:for="{{items}}" class='navigator'>
+  <button class='index_item' bindtap='clickItem' data-index='{{index}}'>{{item}}</button>
+  <view class="navigator-arrow"></view>
+</view>
+
+<button open-type='contact' class='contact_button'>我要补充</button>
