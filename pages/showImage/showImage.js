@@ -1,44 +1,24 @@
-
-//获取应用实例
-const app = getApp()
-
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    content:'aaaaaaa'
-  },
-
-  displayImage: function (e) {
-    var current = e.target.dataset.src
-    wx.navigateTo({
-      url: '../showImage/showImage?image='+current,
-    })
-  },
-
-  previewImage: function (e) {
-    var current = e.target.dataset.src
-    var imageList = new Array()
-    imageList[0] = current
-    wx.previewImage({
-      current:'/pages/images/zy_cys.jpeg',
-      urls: ['/pages/images/zy_cys.jpeg']
-    })
+    imageUrl:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
-    wx.setNavigationBarTitle({
-      title: app.globalData.items[options.index].title,
-    })
-
     this.setData({
-      content: app.globalData.items[options.index].content
+      imageUrl:options.image
+    })
+  },
+
+  clickImage:function(e){
+    wx.navigateBack({
+      delta:1
     })
   },
 

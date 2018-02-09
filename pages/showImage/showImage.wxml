@@ -1,0 +1,1 @@
+<image src='{{imageUrl}}' bindtap='clickImage' mode='widthFix' class='showImage'></image>

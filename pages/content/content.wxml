@@ -1,1 +1,29 @@
-<view>{{content}}</view>
+<import src="../common/title.wxml"/>
+
+<view wx:for="{{content}}">
+
+  <view wx:if="{{item.type==='text'}}">
+    <template is="title" data="{{title:item.title}}"/>
+    <view class='content'>{{item.content}}</view>
+  </view>
+
+  <view wx:if="{{item.type==='list'}}">
+    <template is="title" data="{{title:item.title}}"/>
+    <view wx:for="{{item.content}}" class='list'>
+      <view>{{item}}</view>
+    </view>
+  </view>
+
+  <view wx:if="{{item.type==='image'}}" class='image'>
+    <image src='{{item.image}}' data-src="{{item.image}}" mode='widthFix' bindtap='displayImage'></image>
+  </view>
+
+  <view wx:if="{{item.type==='map'}}">
+    <template is="title" data="{{title:item.title}}"/>
+    <map style="width: 100%; height: 300px;" latitude="{{item.latitude}}" longitude="{{item.longitude}}" markers="{{item.markers}}"></map>
+  </view>
+
+  <view wx:if="{{item.type==='foot'}}" class='foot'>
+    <view>{{item.content}}</view>
+  </view>
+</view>

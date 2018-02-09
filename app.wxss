@@ -8,3 +8,23 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+.title_flex{
+  font-size: 40rpx;
+  color: #fff;
+  flex-direction:row;
+  display: flex;
+  margin-top:20rpx;
+  margin-bottom:20rpx;
+}
+
+.title_flex_pre{
+  background-color: #888;
+  width:30rpx;
+  margin-right:20rpx;
+  margin-left: 20rpx;
+}
+
+.title_flex_content{
+  color:#888;
+}

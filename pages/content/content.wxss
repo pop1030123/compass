@@ -1,1 +1,36 @@
 /* pages/content/content.wxss */
+
+.title{
+  background-color: #888;
+  padding: 20rpx;
+  font-size: 40rpx;
+  color: #fff;
+}
+
+.content{
+  color: #333;
+  font-size: 35rpx;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.list{
+  color: #333;
+  font-size: 35rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.foot{
+  text-align: right;
+  color: #ddd;
+  font-size: 24rpx;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}

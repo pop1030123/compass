@@ -1,0 +1,6 @@
+/* pages/showImage/showImage.wxss */
+
+
+.showImage{
+  width: 100%
+}

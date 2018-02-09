@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view wx:for="{{items}}" class='navigator'>
-  <button class='index_item' bindtap='clickItem' data-index='{{index}}'>{{item}}</button>
+  <button class='index_item' bindtap='clickItem' data-index='{{index}}'>{{item.title}}</button>
   <view class="navigator-arrow"></view>
 </view>
 

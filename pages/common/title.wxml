@@ -1,0 +1,6 @@
+<template name="title">
+    <view class='title_flex'>
+      <view class='title_flex_pre'/>
+      <view class='title_flex_content'>{{title}}</view>
+    </view>
+</template>
