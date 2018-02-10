@@ -25,6 +25,10 @@
   padding-right: 20rpx;
 }
 
+.image{
+  text-align: center
+}
+
 .foot{
   text-align: right;
   color: #ddd;

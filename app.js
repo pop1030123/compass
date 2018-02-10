@@ -106,6 +106,14 @@ App({
           type: 'foot',
           content: 'pop更新于2018年1月7日'
         }]
+      },
+      {
+        title: '机场大巴时刻表',
+        content: [{ type: 'image', image: '/pages/images/jcdbskb.jpg' },
+        {
+          type: 'foot',
+          content: 'pop更新于2018年1月9日'
+        }]
       }
     ]
   }
