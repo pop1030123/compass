@@ -1,13 +1,13 @@
 /* pages/content/content.wxss */
 
-.title{
+.title {
   background-color: #888;
   padding: 20rpx;
   font-size: 40rpx;
   color: #fff;
 }
 
-.content{
+.content {
   color: #333;
   font-size: 35rpx;
   padding-top: 50rpx;
@@ -16,7 +16,7 @@
   padding-right: 20rpx;
 }
 
-.list{
+.list {
   color: #333;
   font-size: 35rpx;
   padding-top: 10rpx;
@@ -25,11 +25,11 @@
   padding-right: 20rpx;
 }
 
-.image{
-  text-align: center
+.image {
+  text-align: center;
 }
 
-.foot{
+.foot {
   text-align: right;
   color: #ddd;
   font-size: 24rpx;
@@ -37,4 +37,27 @@
   padding-bottom: 50rpx;
   padding-left: 20rpx;
   padding-right: 20rpx;
+}
+
+/*table*/
+
+.table {
+  display: block;
+  border: 1px solid #dadada;
+}
+.tr {
+  display:flex;
+  justify-content:space-between;
+}
+.td {
+  /* border-bottom: 0px solid #dadada; */
+   border-right: 1px solid #dadada; 
+  text-align: center;
+  padding: 20rpx;
+  width: 150rpx;
+}
+
+.th {
+  font-weight: 400;
+  background-color: #dadada;
 }

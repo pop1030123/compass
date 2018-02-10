@@ -1,16 +1,27 @@
-<import src="../common/title.wxml"/>
+<import src="../common/title.wxml" />
 
 <view wx:for="{{content}}">
 
   <view wx:if="{{item.type==='text'}}">
-    <template is="title" data="{{title:item.title}}"/>
+    <template is="title" data="{{title:item.title}}" />
     <view class='content'>{{item.content}}</view>
   </view>
 
   <view wx:if="{{item.type==='list'}}">
-    <template is="title" data="{{title:item.title}}"/>
+    <template is="title" data="{{title:item.title}}" />
     <view wx:for="{{item.content}}" class='list'>
       <view>{{item}}</view>
+    </view>
+  </view>
+
+  <view wx:if="{{item.type==='table'}}">
+    <template is="title" data="{{title:item.title}}" />
+    <view wx:for="{{item.content}}" wx:for-item="itemTR" class='table'>
+      <view class='tr'>
+        <view wx:for="{{itemTR}}" wx:for-item="itemTD">
+          <view class='td'>{{itemTD}}</view>
+        </view>
+      </view>
     </view>
   </view>
 
@@ -19,7 +30,7 @@
   </view>
 
   <view wx:if="{{item.type==='map'}}">
-    <template is="title" data="{{title:item.title}}"/>
+    <template is="title" data="{{title:item.title}}" />
     <map style="width: 100%; height: 300px;" latitude="{{item.latitude}}" longitude="{{item.longitude}}" markers="{{item.markers}}"></map>
   </view>
 

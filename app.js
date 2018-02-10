@@ -64,6 +64,14 @@ App({
         ]
       },
       {
+        title: '收发快递和菜鸟驿站',
+        content: [{ type: 'table', title: '菜鸟驿站营业时间', content: [['上午','8:00','12:00'],['午休','12:00','13:00'],['下午','13:00','20:00']]},
+        {
+          type: 'foot',
+          content: 'pop更新于2018年1月10日'
+        }]
+      },
+      {
         title: '天燃气',
         content: [{ type: 'list', title: '购买地点', content: ['1.樱花广场利安电超市。', '2.万科高新华府楼下零点便利店。'] },
         {
@@ -89,22 +97,6 @@ App({
         {
           type: 'foot',
           content: 'pop更新于2018年1月9日'
-        }]
-      },
-      {
-        title: '旅游年卡',
-        content: [{ type: 'list', title: '暂无', content: ['1.暂无信息'] },
-        {
-          type: 'foot',
-          content: 'pop更新于2018年1月7日'
-        }]
-      },
-      {
-        title: '停车费',
-        content: [{ type: 'list', title: '暂无', content: ['1.暂无信息'] },
-        {
-          type: 'foot',
-          content: 'pop更新于2018年1月7日'
         }]
       },
       {

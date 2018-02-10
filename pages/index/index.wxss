@@ -46,3 +46,10 @@
   margin-top: -8rpx;
   right: 28rpx;
 }
+
+.index-foot{
+  font-size:25rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  color: #aaa;
+}

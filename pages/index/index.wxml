@@ -4,4 +4,7 @@
   <view class="navigator-arrow"></view>
 </view>
 
+<view class='index-foot'>如果没有找到需要的信息，请点击「我要补充」按钮告诉我们。</view>
+<view class='index-foot'>如果你有信息可以提供，请点击「我要补充」按钮向我们提供。</view>
+
 <button open-type='contact' class='contact_button'>我要补充</button>
