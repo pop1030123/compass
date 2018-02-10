@@ -16,12 +16,15 @@
 
   <view wx:if="{{item.type==='table'}}">
     <template is="title" data="{{title:item.title}}" />
+    <view style='text-align: center;'>
     <view wx:for="{{item.content}}" wx:for-item="itemTR" class='table'>
       <view class='tr'>
         <view wx:for="{{itemTR}}" wx:for-item="itemTD">
           <view class='td'>{{itemTD}}</view>
         </view>
       </view>
+
+    </view>
     </view>
   </view>
 
